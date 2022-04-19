@@ -15,8 +15,11 @@ sizePicker.onsubmit = function (e) {
   makeGrid();
 };
 
+
 // handles loop for height and width of rows and columns
 function makeGrid() {
+  //clearing table with a new function call
+  pixelCanvas.innerHTML = "";
   // Your code goes here!
   for (let r = 0; r < rowsNumber.value; r++) {
     const row = pixelCanvas.insertRow(r);
